@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+	$(document).ready(function(){
+$('#show').click(function() {
+	$('p').show(2000);
+});
+
+$('#hide').click(function() {
+ $('p').hide(2000);
+});
+
+$('#go').click(function() {
+ $('div').animate({left: '+=50px'}, 'slow');
+});
+
+$('#back').click(function() {
+ $('div').animate({left: '-=25px'}, 'slow');
+});
+});
+</script>
+<style type="text/css">
+	div {
+  background: #98bf21;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+</style>
+</head>
+<body>
+<button id='show'>Show</button>
+<button id="hide">Hide</button>
+<button id="go">Lest Go</button>
+<button id="back">Come back</button>
+
+<div><p>I love you</p></div>
+
+</body>
+</html>
